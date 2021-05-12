@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <div class='cont'>
+                
+            
+            {% if data > 0.50 %}
+            <h1>Masked</h1>
+            
+            {%else%}
+            <h1> No Masked </h1>
+            
+            {%endif%}
+
+        </div>
+            <img src="{{url_for('load_img')}}" alt='img'>
+            <center>
+                <a href="/" class='btn'>go back</a>
+            </center>
+
+        </center>
+        
+    </body>
+</html>
