@@ -3,28 +3,36 @@
     <head>
         <title></title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="static/style.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="static/mobile.css">
     </head>
     <body>
         <center>
-            <div class='cont'>
+            <div class='cont1'>
                 
             
-            {% if data > 0.50 %}
-            <h1>Masked</h1>
+                {% if data > 0.50 %}
+                <h1>Masked</h1>
             
-            {%else%}
-            <h1> No Masked </h1>
+                {%else%}
+                <h1> Not Masked </h1>
             
-            {%endif%}
+                {%endif%}
 
-        </div>
-            <img src="{{url_for('load_img')}}" alt='img'>
-            <center>
-                <a href="/" class='btn'>go back</a>
-            </center>
+            </div>
+                <img src="{{url_for('load_img')}}" alt='img'>
+
+                <center>
+                    <a href="/" class='btn'>Predict Again</a>
+                </center>
 
         </center>
+            <div>
+                <footer id="main-footer">
+                 <p>Vignesh A &copy; 2021, All RIghts Reserved</p>
+                </footer>
+            </div>
         
     </body>
 </html>

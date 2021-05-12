@@ -2,24 +2,32 @@
 <html lang="en">
     <head>
         <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link href="static/style.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="static/mobile.css">
     </head>
     <body>    
         <center>
             <div class='cont'>
-                <h2>WELCOME<br>TO MASKED OR NOT PREDICTOR</h2>
+                <h2>WELCOME<br><span class="green">TO MASKED OR NOT MASKED</span><br><span class="ai" >An Artificial Intelligence predictor </span> </h2>
                 <BR>
                 </BR>
-                <BR>
-                </BR>
-                <BR>
-                </BR>
+
+
                 <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
-                    <input type="file" name='image' class='btn'><br><br><br>
-                    <input type="submit" class='btn'>
+                    <center>
+                        <input id ="files" style="visibility: hidden;" type="file" name='image' class='btn'><br><br><br>
+                        <label for="files" class="btn">Select Image</label>
+                    </center>
+                    <br>
+                    <br>
+                    <br>
+                        <input class = "submit" type="submit" class='btn'>
                 </form>
+                
             </div>
+            
             
 <!--
         <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
@@ -29,6 +37,12 @@
     -->
 
     </center>
+        <div>
+            <footer id="main-footer">
+                <p>Vignesh A &copy; 2021, All RIghts Reserved</p>
+            </footer>
+        </div>
 
     </body>
+
 </html>

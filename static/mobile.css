@@ -1,25 +1,17 @@
 h1{
-    font-size: 90px;
-    font-family:  Verdana;
+    font-size: 80px;
+    text-align: center;
+    font-family: Verdana;
     font-weight: bold;
-    color:  rgb(255, 177, 61);
-}
-.green {
-    color:white;
-  }
-
-.ai {
-    font-size: 20px;
-    color:white;
+    color:rgb(255, 177, 61);
 }
 
 img{
-    width: 450px;
-    /* border: 8px;
-    border-color: darkgreen; */
+    width: 350px;
 }
 
 body{
+    height: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://media.npr.org/assets/img/2020/04/08/20200127-dsc_7027_custom-2e17e1d251236c95e69a2cf4a5c201fb3da1c4ca-s1600-c85.webp") no-repeat center center/cover;
     /* background-attachment: fixed;
     background-color: #141413; */
@@ -32,7 +24,6 @@ color: rgb(255, 177, 61);
 font-family: sans-serif;
 margin: 0px;
 }
-
 
 
 .btn {
@@ -116,31 +107,36 @@ text-align: center;
 }
 
 .cont{
-    background: url('../img/background.jpg') no-repeat center center/cover;
-    /*background-color: #141413;*/
+    /* background-color: #141413; */
     margin : 0px;
-    position: relative;
-    min-height: 80vh;
-    /* padding:0px; */
+    float: none;
+    padding:0px;
     /* height: 100; */
-    /* padding-top: 50px; */
+    padding-top: 50px;
     margin-bottom: 20px;
-    padding-bottom: 2.5rem;
+}
+
+.cont h2{
+    width: 100%;
+    float: none;
 }
 
 .cont1{
+    /* height: 100%; */
+    padding-top: 50px;
+    padding-bottom: 70px;
     background: url('../img/background.jpg') no-repeat center center/cover;
     /*background-color: #141413;*/
     /* margin : 0px; */
     /* position: relative;
     min-height: 80vh; */
     /* padding:0px; */
-    /* height: 100; */
+    
     /* padding-top: 50px; */
-    margin-bottom: 20px;
-    padding-bottom: 2.5rem;
+    /* margin-bottom: 20px; */
+    /* float: none;
+    padding-bottom: 2.5rem; */
 }
-
 
 
 
@@ -158,4 +154,3 @@ span{
     padding: 20px;
     
   }
-
