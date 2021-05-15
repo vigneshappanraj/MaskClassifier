@@ -1,5 +1,6 @@
 numpy==1.19.3
 scipy
+matplotlib
 opencv-python-headless
 tensorflow-cpu
 Keras==2.3.1
