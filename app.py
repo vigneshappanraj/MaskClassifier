@@ -52,7 +52,7 @@ def home():
             mask_result = model.predict(crop)
             a = mask_result[0][0]
             #cv2.putText(new_img,mask_label[round(mask_result[0][0])],(x, y+90), cv2.FONT_HERSHEY_SIMPLEX,0.5,dist_label[label[i]],2)
-            cv2.putText(new_img,str(mask_result[0][0]),(x, y+90), cv2.FONT_HERSHEY_SIMPLEX,0.5,dist_label[label[i]],2)
+            #cv2.putText(new_img,str(mask_result[0][0]),(x, y+90), cv2.FONT_HERSHEY_SIMPLEX,0.5,dist_label[label[i]],2)
             cv2.rectangle(new_img,(x,y),(x+w,y+h),dist_label[label[i]],1)
             cv2.imwrite('static/mask.jpg', cv2.cvtColor(new_img, cv2.COLOR_RGB2BGR))
         #plt.figure(figsize=(10,10))
